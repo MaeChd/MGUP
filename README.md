@@ -18,7 +18,7 @@ In practice you can use **Cautious-MGUP** to avoid the expensive Top-K sort on v
 $$
 \phi_{t,i}= 
 \begin{cases}
-\alpha & \text{if }\mathbf m_{t,i}\cdot\mathbf g_{t,i}>0\\[4pt]
+\alpha & \text{if }\mathbf m_{t,i}\cdot\mathbf g_{t,i}>0\\
 \gamma & \text{if }\mathbf m_{t,i}\cdot\mathbf g_{t,i}\le 0
 \end{cases}
 $$
@@ -94,4 +94,5 @@ The learning rate schedule, as well as the training and validation loss curves, 
     <td><img src="./img/LLaMA2-130M C4 Pre-training Val Loss Curves-AdamW-Type.png" alt="Figure 3: Validation Loss" width="300"/></td>
   </tr>
 </table>
+
 </p>
