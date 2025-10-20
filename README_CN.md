@@ -15,12 +15,10 @@ Our article is accepted as Spotlight by NeurIPS 2025. You can find this in [Neur
 
 
 实践中可以尝试Cautious-MGUP,避免大规模参数下成本较大的TopK排序:
-$$
-\phi_{t,i} = \begin{cases} 
+$$\phi_{t,i} = \begin{cases} 
 \alpha & \text{if } \mathbf{m}_{t,i} \cdot \mathbf{g}_{t,i} > 0 \\ 
 \gamma & \text{if } \mathbf{m}_{t,i} \cdot \mathbf{g}_{t,i} \le 0 
-\end{cases}
-$$
+\end{cases}$$
 
 Note 1: 我们的理论分析限于Adam，因此对于Lion和Muon等算法的是否存在使用Cautious策略而导致不收敛是一个开放的问题。
 
@@ -93,6 +91,7 @@ from MGUP.MGUP_AdamW import CMGUP_AdamW as cmg_adamw
   </tr>
 </table>
 </p>
+
 
 
 
